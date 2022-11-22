@@ -70,7 +70,7 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 /*----- Styling the sliders ----*/
@@ -189,7 +189,8 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 #price-container::before {
-  content: "Monthly Payable:";
+  content: "Monthly Payable :";
+  margin-bottom: 20px;
   font-size: 12px;
   display: block;
 }
@@ -221,6 +222,16 @@ input[type="range"]:focus::-ms-fill-upper {
     gap: 30px;
   }
   .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
     display: flex;
     align-items: center;
     justify-content: center;
