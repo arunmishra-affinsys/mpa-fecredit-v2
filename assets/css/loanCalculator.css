@@ -13,6 +13,8 @@ body {
 
 .container {
   height: auto;
+  position: relative;
+  right: 8px;
   width: 40%;
   border-radius: 20px;
   padding: 50px;
