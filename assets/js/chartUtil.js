@@ -73,19 +73,19 @@ function displayDetails() {
   let opts = '{style: "decimal", currency: "US"}';
 
   document.querySelector("#cp").innerText =
-    parseFloat(P).toLocaleString("en-US", opts) + "₹";
+    parseInt(P).toLocaleString("en-US", opts) + " ₹";
 
   document.querySelector("#ci").innerText =
-    parseFloat(payabaleInterest).toLocaleString("en-US", opts) + "₹";
+    parseInt(payabaleInterest).toLocaleString("en-US", opts) + " ₹";
 
   document.querySelector("#ct").innerText =
-    parseFloat(parseFloat(P) + parseFloat(payabaleInterest)).toLocaleString(
+    parseInt(parseFloat(P) + parseFloat(payabaleInterest)).toLocaleString(
       "en-US",
       opts
-    ) + "₹";
+    ) + " ₹";
 
   document.querySelector("#price").innerText =
-    parseFloat(emi).toLocaleString("en-US", opts) + "₹";
+    parseInt(emi).toLocaleString("en-US", opts) + " ₹";
 
   pie.data.datasets[0].data[0] = P;
   pie.data.datasets[0].data[1] = payabaleInterest;
@@ -97,15 +97,15 @@ function displayDetails() {
 function initialize() {
   document.querySelector("#loan-amt-text").innerText =
     parseInt(loan_amt_slider.value).toLocaleString("en-US") + "₹";
-  P = parseFloat(document.getElementById("loan-amount").value);
+  P = parseInt(document.getElementById("loan-amount").value);
 
   document.querySelector("#interest-rate-text").innerText =
     int_rate_slider.value + "%";
-  R = parseFloat(document.getElementById("interest-rate").value);
+  R = parseInt(document.getElementById("interest-rate").value);
 
   document.querySelector("#loan-period-text").innerText =
     loan_period_slider.value + " years";
-  N = parseFloat(document.getElementById("loan-period").value);
+  N = parseInt(document.getElementById("loan-period").value);
 
   line = new Chart(document.getElementById("lineChart"), {
     data: {
