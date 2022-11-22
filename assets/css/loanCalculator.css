@@ -13,17 +13,57 @@ body {
 
 .container {
   height: auto;
-  width: 40rem;
+  width: 40%;
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px;
   margin: 50px 0;
+
+  /* justify-content: center;
+  align-items: center; */
   background-image: linear-gradient(to bottom left, #e4dfec, white, white);
 }
 .sub-container {
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
   width: 100%;
   gap: 50px;
   height: max-content;
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .loan-details {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .sub-container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    } */
 }
 
 .header {
