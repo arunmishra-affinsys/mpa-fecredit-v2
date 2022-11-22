@@ -126,6 +126,8 @@ function initialize() {
       labels: [],
     },
     options: {
+      responsive: true,
+      aspectRatio: 1,
       plugins: {
         title: {
           display: true,
@@ -165,6 +167,7 @@ function initialize() {
       ],
     },
     options: {
+      responsive: true,
       plugins: {
         title: {
           display: true,

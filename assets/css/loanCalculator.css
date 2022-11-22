@@ -57,7 +57,7 @@ body {
 
 .view,
 .breakup {
-  width: 50%;
+  width: 90%;
 }
 .details input {
   width: 100%;
@@ -201,10 +201,6 @@ input[type="range"]:focus::-ms-fill-upper {
   flex-direction: column;
 }
 
-#pieChart {
-  width: 150%;
-}
-
 @media only screen and (max-width: 720px) {
   .container {
     width: 70%;
@@ -228,9 +224,6 @@ input[type="range"]:focus::-ms-fill-upper {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  canvas {
-    width: 100%;
   }
 }
 
